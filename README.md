@@ -129,7 +129,7 @@ Before I start the layout designing of the all cells in the library there was a 
 
 Once done with the sub part, I designed layout of all the required cells. The screenshot of layout of D Flipflop is shown below. Rest of the screenshots you can find [here](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/tree/master/Screenshots/Layouts).
 
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/dff.JPG "D flip flop layout")
+![alt text](Screenshots/Layouts/dff.JPG "D flip flop layout")
 
 ## 4.Library creation and synthesis using it.
 Once all the layouts were done, next step was to create the library file using it. This included several steps as follows:
