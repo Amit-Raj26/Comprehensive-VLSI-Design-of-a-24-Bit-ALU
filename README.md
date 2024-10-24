@@ -153,11 +153,11 @@ I also did the Static Time Analysis (STA) using PrimeTime to get the slack of th
 After done with the routing and floorplanning in Encounter I got the final layout of the system but this layout needs to be exported to Cadence Virtuso. To do so a Data Extraction File (DEF) is created/exported from Encounter. The DEF file contains the location information of each cell and their pins etc.
 
 This DEF file is imported to cadence Virtuso which generated the final layout of an ALU in Cadence Virtuso. Below is the complete and zoomed in screenshot of the same.
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/final.JPG "Final layout")
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/alu%20zoomed.JPG "Zoomed final layout")
+![alt text](Screenshots/Layouts/final.JPG "Final layout")
+![alt text](Screenshots/Layouts/alu%20zoomed.JPG "Zoomed final layout")
 
 I also generated the schematic view of the ALU with the help of symbol views I created in Cadence library and the mapped netlist verilog file. Below is the final schematic of the system.
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/schematic.JPG "Final Schematic")
+![alt text](Screenshots/Layouts/schematic.JPG "Final Schematic")
 
 And this concludes the whole VLSI Design project.
 
