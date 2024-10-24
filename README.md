@@ -125,11 +125,11 @@ This shows that there were 4039 cells in the final design.
 ## 3.Layout designing (Backend part).
 As I mentioned in part 2 that the library which I used to synthesize the code was provided by the college. Now My job was to create my own cell library just like that. The very first step to create my own library was to start designing the layouts of the gates/cells. The most popular tool for layout designing (a.k.a. Physical designing/BackEnd Designing) is Cadence Virtuso and schematic.
 
-Before I start the layout designing of the all cells in the library there was a sub part in this step which aimed to design a layout of an inverter and size it in such a way that it will provide minimum Energy-Delay Product (EDP) while minimizing the total cell area. Now it is normal for a rookie/non-technical person to think that this may need a hit-n-try method to get the optimum cell size along with optimum EDP. But that is not the case. For this, I designed a simple inverter layout and generated its spice netlist (.sp file) after performing DRC/LVS/QRC. Then with the help of ![Inverter Layout](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/blob/master/inv_SPICE.sp) and the spice netlist I swept the value of Wp (Width of the p-mos) while keeping the Wn (Width of the n-mos) constant.
+Before I start the layout designing of the all cells in the library there was a sub part in this step which aimed to design a layout of an inverter and size it in such a way that it will provide minimum Energy-Delay Product (EDP) while minimizing the total cell area. Now it is normal for a rookie/non-technical person to think that this may need a hit-n-try method to get the optimum cell size along with optimum EDP. But that is not the case. For this, I designed a simple inverter layout and generated its spice netlist (.sp file) after performing DRC/LVS/QRC. Then with the help of [HSPICE](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/blob/master/inv_SPICE.sp) and the spice netlist I swept the value of Wp (Width of the p-mos) while keeping the Wn (Width of the n-mos) constant.
 
 Once done with the sub part, I designed layout of all the required cells. The screenshot of layout of D Flipflop is shown below. Rest of the screenshots you can find [here](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/tree/master/Screenshots/Layouts).
 
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/blob/master/Screenshots/Layouts/dff.JPG "D flip flop layout")
+![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/dff.JPG "D flip flop layout")
 
 ## 4.Library creation and synthesis using it.
 Once all the layouts were done, next step was to create the library file using it. This included several steps as follows:
@@ -153,11 +153,11 @@ I also did the Static Time Analysis (STA) using PrimeTime to get the slack of th
 After done with the routing and floorplanning in Encounter I got the final layout of the system but this layout needs to be exported to Cadence Virtuso. To do so a Data Extraction File (DEF) is created/exported from Encounter. The DEF file contains the location information of each cell and their pins etc.
 
 This DEF file is imported to cadence Virtuso which generated the final layout of an ALU in Cadence Virtuso. Below is the complete and zoomed in screenshot of the same.
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/blob/master/Screenshots/Layouts/final.JPG "Final layout")
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/blob/master/Screenshots/Layouts/alu%20zoomed.JPG "Zoomed final layout")
+![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/final.JPG "Final layout")
+![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/alu%20zoomed.JPG "Zoomed final layout")
 
 I also generated the schematic view of the ALU with the help of symbol views I created in Cadence library and the mapped netlist verilog file. Below is the final schematic of the system.
-![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU/blob/master/Screenshots/Layouts/schematic.JPG "Final Schematic")
+![alt text](https://github.com/Amit-Raj26/Comprehensive-VLSI-Design-of-a-24-Bit-ALU-/blob/master/Screenshots/Layouts/schematic.JPG "Final Schematic")
 
 And this concludes the whole VLSI Design project.
 
